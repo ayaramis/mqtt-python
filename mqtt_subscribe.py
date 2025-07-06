@@ -12,5 +12,5 @@ client.connect(mqttBroker)
 client.loop_start()
 client.subscribe("TEMPERATURE")
 client.on_message = on_message
-time.sleep(30)
-client.loop_read()
+time.sleep(5)
+client.loop_forever()
